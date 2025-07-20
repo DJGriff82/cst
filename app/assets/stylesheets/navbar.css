@@ -1,0 +1,19 @@
+.navbar-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #333;
+}
+
+.navbar-container a:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}

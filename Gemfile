@@ -4,8 +4,9 @@ source "https://rubygems.org"
 gem "rails", "~> 8.0.2"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 2.1"
+# Use pg as the database for Active Record
+gem "pg", "~> 1.1"
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
@@ -16,6 +17,27 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+
+# Customs Gems
+gem 'devise', '~> 4.9', '>= 4.9.4'
+
+gem 'sidekiq', '~> 8.0', '>= 8.0.5'
+gem 'phlex', '~> 2.3', '>= 2.3.1'
+gem 'bundler', '~> 2.7'
+gem 'rack', '~> 3.1', '>= 3.1.16'
+gem 'json', '~> 2.13'
+gem 'rspec-expectations', '~> 3.13', '>= 3.13.5'
+#gem 'simplecov-html', '~> 0.13.2'
+gem 'rubocop-rails', '~> 2.32'
+
+gem 'pagy', '~> 9.3', '>= 9.3.5'
+gem 'flipper'
+gem 'simple_form', '~> 5.3', '>= 5.3.1'
+gem 'simple_form-tailwind', '~> 0.2.0'
+gem 'tailwindcss-rails', '~> 4.3'
+
+gem 'react-rails', '~> 3.2', '>= 3.2.1'
+gem 'friendly_id', '~> 5.5', '>= 5.5.1'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -61,3 +83,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "phlex-rails", "~> 2.3"
